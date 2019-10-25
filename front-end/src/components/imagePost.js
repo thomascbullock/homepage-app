@@ -10,15 +10,17 @@ class ShortPost extends React.Component {
         return (
             <React.Fragment>
                 <li>
-                    <p>
-                        <span className="date">{ this.props.details.date }</span>
-                    </p>
-                    <p>
+                    <ul>
+                       <li> 
+                           <span className="date">{ this.props.details.date }</span>
+                       </li>
+                        <li>
                         <span className="title"> { this.props.details.title.titleString }</span>
-                    </p>
-                    <p>
+                        </li>
+                        <li>
                         <span className="image"> { this.props.details.image }</span>
-                    </p>
+                        </li>
+                    </ul>
                 </li>
             </React.Fragment>
         );

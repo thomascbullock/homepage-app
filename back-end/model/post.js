@@ -13,7 +13,8 @@ const postSchema = Schema({
 	asset: {
 		isS3: { type: Boolean, required: true, default: false },
 		assetString: { type: String, required: true }
-	}
+	},
+	quote: { type: String, required: false}
 });
 
 module.exports = mongoose.model('post', postSchema);

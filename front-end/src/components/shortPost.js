@@ -5,12 +5,14 @@ class ShortPost extends React.Component {
         return (
             <React.Fragment>
                 <li>
-                    <p>
+                    <ul>
+                        <li>
                         <span>{ this.props.details.date }</span>
-                    </p>
-                    <p>
-                        <span> { this.props.details.title.titleString }</span>
-                    </p>
+                        </li>
+                        <li>
+                        <span> { this.props.details.asset.assetString }</span>
+                        </li>
+                    </ul>
                 </li>
             </React.Fragment>
         );

@@ -4,6 +4,8 @@ const uuid = require('uuid/v1');
 const s3Uploader = async function (file) {
 
     console.log('made it to s3Uploader function...');
+    console.log('the file...');
+    console.log(file);
 
     const newUuid = uuid();
 
@@ -19,6 +21,7 @@ const s3Uploader = async function (file) {
     console.log('uploading...');
     console.log(uploadParams);
     await s3.putObject(uploadParams).promise();
+    console.log('returning...');
     return newUuid;
     } catch (err) {
         console.log(err);
